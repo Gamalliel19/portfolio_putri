@@ -1,0 +1,280 @@
+/* color: #0a0a14;
+    background-color: #de0f66; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Calibre", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    /* color: #0a0a14;
+    background-color: #de0f66; */
+}
+body{
+    color: #0a0a14;
+    font-family: "Calibre", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#project{
+    text-align: center;
+}
+/*HOME SECTION*/
+
+.home{
+    padding: 2% 10%;
+}
+.btn{
+    background-color: white;
+    border-color: #de0f66;
+}
+.btn:hover{
+    background-color: #de0f66;
+    color: white;
+}
+.btn-download{
+    text-decoration: none;
+    color: #de0f66;
+}
+.btn-download:hover{
+    color: white;
+    text-decoration: white;
+}
+/*NAVBAR*/
+.nav-item{
+    margin-left: 20px;
+}
+.nav-link{
+    color: black;
+    font-family: "Calibre", sans-serif;
+}
+.nav-link:hover{
+    color: #de0f66;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.fas{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.navbar-toggler{
+    border-color: #de0f66;
+}
+.navbar-toggler-icon{
+    color: #de0f66;
+    background-image: #de0f66;
+    font-size: 15px;
+}
+.navbar-brand{
+    font-weight: bold;
+    color: #de0f66;
+}
+.navbar-brand:hover{
+    color: #de0f66;
+}
+
+/*LANDING SECTION*/
+.landing{
+    padding: 3% 13%;
+}
+
+/*PROFILE*/
+.campus{
+    color:#de0f66 ;
+    text-decoration: none;
+}
+.campus:hover{
+    text-decoration: none;
+}
+.profile{
+    height: 400px;
+    margin-top: 20px;
+}
+
+/*CANDO SECTION*/
+.cando{
+    padding: 5% 10% ;
+    background:#f1428b ;
+    color: white;
+    font-family: "Calibre", sans-serif;
+    text-align: center;
+}
+.candos{
+    margin-top: 20px;
+}
+.doit{
+    font-size: 50px;
+    margin-top: 30px;
+}
+.doit:hover{
+    color: #f6acc8;
+}
+
+/*ABOUT SECTION*/
+.about{
+    padding: 10% 10%;
+    text-align: center;
+}
+.abouts{
+    text-align: left;
+}
+.about ul {
+    list-style: none; /* Remove default bullets */
+    margin-left: 15px;
+  }
+  
+.about ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.main-about{
+    margin-top: 50px;
+}
+
+/*PROJECTS SECTION*/
+
+.project{
+    text-align: center;
+    padding: 2% 10%;
+}
+.card{
+    margin-top: 30px;
+}
+.card-text{
+    color: #0a0a14;
+    font-family: "Calibre", sans-serif;
+
+}
+.card:hover{
+    border-color: #de0f66;
+    box-shadow: 5px 10px #ffe3ed ;
+}
+.card-img-top{
+    height: 200px;
+}
+.card-icon{
+    font-size: 25px;
+    padding: 2% 5%;
+    color: black;
+    opacity: 0.5;
+}
+.card-icon:hover{
+    opacity: 1;
+}
+.cards{
+    background-color: #ffb6b9   ;
+}
+.cardss{
+    background-color: #f35588;
+}
+.cardsss{
+    background-color: #ffe3ed;
+}
+.cardssss{
+    background-color: #f6acc8;
+}
+.cardsssss{
+    background-color: #f5a8a8;
+}
+.cardssssss{
+    background-color: #f1d1d1;
+}
+
+/* @media (max-width: 1028px) {
+
+    #project {
+      text-align: center;
+    }
+    #about{
+        text-align: center;
+    }
+} */
+
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: left;
+    }
+    .project{
+        margin: 0 auto;
+        padding: 0 18%;
+    }
+  }
+
+/*CONTACT*/
+.contact{
+    margin-top: 50px;
+    padding: 10% 25%;
+    background: #ffe3ed;
+    text-align: center;
+}
+.email{
+    color: black;
+    text-decoration: none;
+}
+.email:hover{
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.btn-email{
+    border-color: black;
+    background-color: #ffe3ed;
+}
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+    padding: 0% 25%;
+}
+.footer i{
+    font-size: 30px;
+    color: black;
+    padding: 5%;
+}
+.footer i:hover{
+    opacity: 0.5;
+}
+
+/* To Top Button */
+
+.to-top {
+    background: #f6acc8;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color: #f7f7f7;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top:hover{
+    background: #de0f66;
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
